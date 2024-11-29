@@ -35,11 +35,18 @@
             font-weight: bold;
             margin: 5px;
         }
-        iframe {
+        .iframe-container {
+            position: relative;
             width: 100%;
-            height: 600px;
+            padding-top: 56.25%;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border: none;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -49,7 +56,14 @@
         <h2>Zhou Ruomiao</h2>
         <h3>1009611</h3>
         <p>Welcome to my homework!</p>
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTJxiWc4ihmD7sF_8g1TKsoxu9gUu6g9vzGGqduFODlZ5BCaaV1hh0c4dPr6JB05_9lS19peJSwG_Bb/embed?start=true&loop=false&delayms=60000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <div class="iframe-container">
+            <iframe 
+                src="https://docs.google.com/presentation/d/e/2PACX-1vTJxiWc4ihmD7sF_8g1TKsoxu9gUu6g9vzGGqduFODlZ5BCaaV1hh0c4dPr6JB05_9lS19peJSwG_Bb/embed?start=true&loop=false&delayms=60000" 
+                allowfullscreen="true" 
+                mozallowfullscreen="true" 
+                webkitallowfullscreen="true">
+            </iframe>
+        </div>
     </div>
 </body>
 </html>
